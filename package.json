@@ -35,7 +35,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc && tsc-alias",
+    "build": "bun build ./src/index.ts --target bun --outfile dist/index.js",
     "dev": "bun run --watch src/index.ts",
     "lint": "prettier -c .",
     "pretty": "prettier --write .",
