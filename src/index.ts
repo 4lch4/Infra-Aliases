@@ -8,8 +8,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const SCRIPT_STARTER = '#!/usr/bin/env bash'
 const OUT_DIR = join(__dirname, '..', 'out')
 
-console.log(`[INFO]: OUT_DIR is ${OUT_DIR}`)
-
 async function updateAliases(aliases: string[]) {
   try {
     console.debug(`[DEBUG][saveAliases]: Successfully downloaded ${aliases.length} aliases.`)
