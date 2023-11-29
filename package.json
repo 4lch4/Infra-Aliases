@@ -40,7 +40,8 @@
     "lint": "prettier -c .",
     "pretty": "prettier --write .",
     "start": "bun run dist/index.js",
-    "test": "bun test"
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
