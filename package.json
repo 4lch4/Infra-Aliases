@@ -1,0 +1,54 @@
+{
+  "name": "@4lch4/infra-aliases",
+  "displayName": "Infrastructure Aliases",
+  "version": "0.0.0",
+  "description": "A tool for downloading and processing aliases stored as secrets in Doppler.",
+  "keywords": [
+    "4lch4"
+  ],
+  "homepage": "https://github.com/4lch4/Infra-Aliases",
+  "bugs": {
+    "email": "bugs@4lch4.email",
+    "url": "https://github.com/4lch4/Infra-Aliases/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/4lch4/Infra-Aliases.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "4lch4",
+    "email": "hey@4lch4.email",
+    "url": "https://4lch4.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "infra-aliases": "./dist/index.js"
+  },
+  "type": "module",
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "start": "bun run dist/index.js",
+    "dev": "bun run --watch src/index.ts",
+    "build": "tsc && tsc-alias",
+    "pretty": "prettier --write .",
+    "lint": "prettier -c .",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2",
+    "tsc-alias": "^1.8.8",
+    "bun-types": "^1.0.14",
+    "prettier": "^3.1.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.6"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
