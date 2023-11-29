@@ -1,7 +1,7 @@
 {
   "name": "@4lch4/infra-aliases",
   "displayName": "Infrastructure Aliases",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tool for downloading and processing aliases stored as secrets in Doppler.",
   "keywords": [
     "4lch4"
